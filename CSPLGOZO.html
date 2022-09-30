@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSPL ACTIVITY</title>
+</head>
+<body>
+    <h1> SYSTEM INTEGRATION AND ARCHITECTURE 1</h1>
+    <h2> Ma. Jea Erlinda D. Gozo</h2>
+    <h3> BSIT - M021</h3>
+
+    <h2>Breed: <span id></span><br /> </h4>
+</body>
+<script type = "text/javascript">
+
+    async function GetData(){
+        const response = await fetch ("https://dog.ceo/api/breeds/image/random")
+        const data = await response.json();
+        const {breed} = data;
+
+
+        document.getElementById("Breed").scr = breed
+        document.getElementById("image").src = "picture.gif"
+    }
+</script>
+</html>
